@@ -560,15 +560,15 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <div class="mk2-heading mk2-heading__white mb-0" data-scroll data-scroll-speed=".75">
+              <div class="mk2-heading mk2-heading__white" data-scroll data-scroll-speed=".75">
                 <h3>Fixtures</h3>
               </div>
             </div>
             <div class="col-lg-12">
               <div class="mk2-fixtures__content">
-                <div class="row">
+                <div class="row align-items-center">
                   <div class="col-lg-6">
-                    <div class="mk2-fixtures__matches">
+                    <div class="mk2-fixtures__matches" data-scroll data-scroll-speed="-0.75">
                       <div class="mk2-fixtures__match-single">
                         <div class="mk2-fixtures__match-single-wrap">
                           <div class="mk2-fixtures__match-single-top">
@@ -583,14 +583,54 @@
                             </div>
                           </div>
                           <div class="mk2-fixtures__match-single-box">
+                            <div class="mk2-fixtures__match-t1 win">
+                              <div class="match__tName">
+                                <img src="./assets/images/logo.png" alt="...">
+                                <h6>Murshidabad Kings</h6>
+                              </div>
+                              <div class="match__tScore">
+                                <h4>191<span>/</span>6</h4>
+                                <span class="match__overs">(19.3 Overs)</span>
+                              </div>
+                            </div>
+                            <div class="mk2-fixtures__match-divider">
+                              <h4>vs</h4>
+                            </div>
+                            <div class="mk2-fixtures__match-t2 loss">
+                              <div class="match__tName">
+                                <img src="./assets/images/logo.png" alt="...">
+                                <h6>Murshidabad Kings</h6>
+                              </div>
+                              <div class="match__tScore">
+                                <h4>191<span>/</span>6</h4>
+                                <span class="match__overs">(19.3 Overs)</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mk2-fixtures__match-single">
+                        <div class="mk2-fixtures__match-single-wrap upcoming">
+                          <div class="mk2-fixtures__match-single-top">
+                            <div class="match__date">
+                              <h5><span>12</span> June, 2024</h5>
+                            </div>
+                            <div class="match__num">
+                              <h5>Match 1</h5>
+                            </div>
+                            <div class="match__status">
+                              <h5>Upcoming</h5>
+                            </div>
+                          </div>
+                          <div class="mk2-fixtures__match-single-box">
                             <div class="mk2-fixtures__match-t1">
                               <div class="match__tName">
                                 <img src="./assets/images/logo.png" alt="...">
                                 <h6>Murshidabad Kings</h6>
                               </div>
                               <div class="match__tScore">
-                                <h4>191/6</h4>
-                                <span class="match__overs">(19.3)</span>
+                                <h4>191<span>/</span>6</h4>
+                                <span class="match__overs">(19.3 Overs)</span>
                               </div>
                             </div>
                             <div class="mk2-fixtures__match-divider">
@@ -602,8 +642,8 @@
                                 <h6>Murshidabad Kings</h6>
                               </div>
                               <div class="match__tScore">
-                                <h4>191/6</h4>
-                                <span class="match__overs">(19.3)</span>
+                                <h4>191<span>/</span>6</h4>
+                                <span class="match__overs">(19.3 Overs)</span>
                               </div>
                             </div>
                           </div>
@@ -612,13 +652,13 @@
                     </div>
                   </div>
                   <div class="col-lg-6">
-                    <div class="mk2-fixtures__table">
+                    <div class="mk2-fixtures__table" data-scroll data-scroll-speed=".75">
                       <div class="table-responsive">
                         <div class="table-title d-flex justify-content-between">
                           <h4>Season</h4>
                           <h4>2024</h4>
                         </div>
-                        <table class="table table-primary">
+                        <table class="table table-bordered">
                           <thead>
                             <tr>
                               <th scope="col">#</th>
@@ -631,11 +671,13 @@
                             </tr>
                           </thead>
                           <tbody>
-                            <tr class="">
-                              <td scope="row">1</td>
+                            <tr class="tFix-row">
+                              <td>1</td>
                               <td>
-                                <img src="./assets/images/logo.png" alt="...">
-                                Murshidabad Kings
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
                               </td>
                               <td>7</td>
                               <td>7</td>
@@ -643,11 +685,97 @@
                               <td>+1.22</td>
                               <td>3</td>
                             </tr>
-                            <tr class="">
-                              <td scope="row">2</td>
+                            <tr class="tFix-row">
+                              <td>2</td>
                               <td>
-                                <img src="./assets/images/logo.png" alt="...">
-                                Murshidabad Kings
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
+                              </td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>+1.44</td>
+                              <td>2</td>
+                            </tr>
+                            <tr class="tFix-row">
+                              <td>1</td>
+                              <td>
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
+                              </td>
+                              <td>7</td>
+                              <td>7</td>
+                              <td>7</td>
+                              <td>+1.22</td>
+                              <td>3</td>
+                            </tr>
+                            <tr class="tFix-row">
+                              <td>2</td>
+                              <td>
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
+                              </td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>+1.44</td>
+                              <td>2</td>
+                            </tr>
+                            <tr class="tFix-row">
+                              <td>1</td>
+                              <td>
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
+                              </td>
+                              <td>7</td>
+                              <td>7</td>
+                              <td>7</td>
+                              <td>+1.22</td>
+                              <td>3</td>
+                            </tr>
+                            <tr class="tFix-row">
+                              <td>2</td>
+                              <td>
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
+                              </td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>4</td>
+                              <td>+1.44</td>
+                              <td>2</td>
+                            </tr>
+                            <tr class="tFix-row">
+                              <td>1</td>
+                              <td>
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
+                              </td>
+                              <td>7</td>
+                              <td>7</td>
+                              <td>7</td>
+                              <td>+1.22</td>
+                              <td>3</td>
+                            </tr>
+                            <tr class="tFix-row">
+                              <td>2</td>
+                              <td>
+                                <div class="table-team">
+                                  <img src="./assets/images/logo.png" alt="...">
+                                  Murshidabad Kings
+                                </div>
                               </td>
                               <td>4</td>
                               <td>4</td>

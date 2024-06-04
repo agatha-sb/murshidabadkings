@@ -105,7 +105,30 @@ var womensSquadSwiper = new Swiper(".mk2-squad__kueens-swiper", {
     }
   }
 });
-
+var fixturesSwiper = new Swiper(".mk2-fixtures__matches-swiper", {
+  direction: "vertical",
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    480: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+});
 
 $('.popup-youtube').magnificPopup({
   type: 'iframe',
