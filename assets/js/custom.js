@@ -3,14 +3,8 @@
 // ************************************************* //
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
-  smooth: true,
-  smartphone: {
-    smooth: true
-  }
+  smooth: true
 });
-new ResizeObserver(() => scroll.update()).observe(
-  document.querySelector("[data-scroll-container]")
-);
 
 
 // ************************************************* //
@@ -24,7 +18,19 @@ scroll.on('scroll', (args) => {
   }
 });
 
-Fancybox.bind('[data-fancybox="gallery"]', {
+Fancybox.bind('[data-fancybox="gallery-1"]', {
+  caption: function (fancybox, slide) {
+    const figurecaption = slide.triggerEl?.querySelector(".tab-caption");
+    return figurecaption ? figurecaption.innerHTML : slide.caption || "";
+  },
+});
+Fancybox.bind('[data-fancybox="gallery-2"]', {
+  caption: function (fancybox, slide) {
+    const figurecaption = slide.triggerEl?.querySelector(".tab-caption");
+    return figurecaption ? figurecaption.innerHTML : slide.caption || "";
+  },
+});
+Fancybox.bind('[data-fancybox="gallery-3"]', {
   caption: function (fancybox, slide) {
     const figurecaption = slide.triggerEl?.querySelector(".tab-caption");
     return figurecaption ? figurecaption.innerHTML : slide.caption || "";
@@ -36,6 +42,10 @@ var mensSquadSwiper = new Swiper(".mk2-squad__kings-swiper", {
   autoPlay: false,
   spaceBetween: "15px",
   loop: true,
+  grid: {
+    rows: 2,
+    fill: "row",
+  },
   autoplay: {
     delay: 3000,
   },
