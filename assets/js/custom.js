@@ -3,18 +3,32 @@
 // ************************************************* //
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
-  smooth: true
+  smooth: true,
+  scrollFromAnywhere: true,
+  multiplier: 1,
+  getDirection: true,
+  reloadOnContextChange: true,
+  touchMultiplier: 3,
+  smoothMobile: 0,
+  smartphone: {
+      smooth: !0,
+      breakpoint: 766
+  },
+  tablet: {
+      smooth: !0,
+      breakpoint: 1010
+  },
 });
 
 
 // ************************************************* //
 // * +++++++++++++ 02. Header sticky & navbar ++++++++++++++ * //
 // ************************************************* //
-scroll.on('scroll', (args) => {
-  if (args.scroll.y > 0) {
-      document.body.classList.add('scrolled');
+scroll.on('scroll', (position) => {
+  if ((position.scroll.y) > 600) {
+    document.querySelector('.mk2-page__header').classList.add('fixed__header');
   } else {
-      document.body.classList.remove('scrolled');
+    document.querySelector('.mk2-page__header').classList.remove('fixed__header');
   }
 });
 
