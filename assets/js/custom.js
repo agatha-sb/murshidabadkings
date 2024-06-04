@@ -68,8 +68,7 @@ var mensSquadSwiper = new Swiper(".mk2-squad__kings-swiper", {
       slidesPerView: 2.5
     },
     1024: {
-      slidesPerView: 3,
-      navigation: false
+      slidesPerView: 4
     }
   }
 });
@@ -78,6 +77,10 @@ var womensSquadSwiper = new Swiper(".mk2-squad__kueens-swiper", {
   autoPlay: false,
   spaceBetween: "15px",
   loop: true,
+  grid: {
+    rows: 2,
+    fill: "row",
+  },
   autoplay: {
     delay: 3000,
   },
@@ -100,8 +103,7 @@ var womensSquadSwiper = new Swiper(".mk2-squad__kueens-swiper", {
       slidesPerView: 2.5
     },
     1024: {
-      slidesPerView: 3,
-      navigation: false
+      slidesPerView: 3
     }
   }
 });

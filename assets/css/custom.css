@@ -708,6 +708,38 @@ section[class^="mk2-"] {
 .swiper-horizontal > .swiper-scrollbar, .swiper-scrollbar.swiper-scrollbar-horizontal {
   bottom: 0px;
 }
+.mk2-squad__top {
+  margin-bottom: 25px;
+}
+.mk2-squad__tabs .nav-item .nav-link {
+  color: var(--clr-blue);
+  padding: 0 18px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  line-height: 50px;
+  border: none !important;
+  position: relative;
+}
+.mk2-squad__tabs .nav-item .nav-link::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: unset;
+  background-color: var(--clr-accent);
+  transition: all 0.3s ease-in-out 0.3s;
+  right: 0;
+}
+
+.mk2-squad__tabs .nav-item .nav-link.active::before, .mk2-squad__tabs .nav-item .nav-link:hover::before {
+  width: 100%;
+  left: 0;
+  right: unset;
+  transition: all 0.5s ease-in-out;
+}
 .mk2-squad__kings-single {
   padding: 10px 65px 0 10px;
   position: relative;
@@ -1008,9 +1040,13 @@ section[class^="mk2-"] {
   object-fit: cover;
   height: 100%;
   width: 100%;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
 }
-
-
+.mk2-gallery__tab-single:hover img {
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
 .mk2-gallery__tab-single {
   position: relative;
   z-index: 1;
@@ -1052,6 +1088,7 @@ section[class^="mk2-"] {
   font-size: 19px;
   border-radius: 50%;
   text-indent: 4px;
+  z-index: 1;
 }
 .mk2-gallery__tabs .nav-item .nav-link {
   color: var(--clr-blue);
@@ -1119,6 +1156,41 @@ section[class^="mk2-"] {
   opacity: 0.3;
   top: 0;
   left: 0;
+}
+.mk2-fixtures__top {
+  margin-bottom: 25px;
+}
+.mk2-fixtures__tabs .nav-item .nav-link {
+  color: var(--clr-white);
+  padding: 0 18px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  line-height: 50px;
+  border: none !important;
+  position: relative;
+}
+.mk2-fixtures__tabs .nav-item .nav-link::before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: unset;
+  background-color: var(--clr-white);
+  transition: all 0.3s ease-in-out 0.3s;
+  right: 0;
+}
+
+.mk2-fixtures__tabs .nav-item .nav-link.active::before, .mk2-fixtures__tabs .nav-item .nav-link:hover::before {
+  width: 100%;
+  left: 0;
+  right: unset;
+  transition: all 0.5s ease-in-out;
+}
+.mk2-fixtures__tabs .nav-item .nav-link.active {
+  background-color: var(--clr-purple);
 }
 .mk2-fixtures__matches {
   display: flex;
