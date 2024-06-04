@@ -18,8 +18,11 @@ const scroll = new LocomotiveScroll({
       smooth: !0,
       breakpoint: 1010
   },
+  
 });
-
+// imagesLoaded(currentScrollContainer, { background: true }, function () {
+//   scroll.update();
+// })
 
 // ************************************************* //
 // * +++++++++++++ 02. Header sticky & navbar ++++++++++++++ * //

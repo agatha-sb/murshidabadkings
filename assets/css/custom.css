@@ -714,13 +714,18 @@ section[class^="mk2-"] {
 }
 .mk2-squad__kings-pInfo {
   display: flex;
-  writing-mode: sideways-lr;
+  writing-mode: vertical-lr;
   position: absolute;
   right: 9px;
   top: 50%;
   transform: translateY(-50%);
   height: 100%;
   justify-content: space-evenly;
+}
+@supports (writing-mode:sideways-lr) {
+  .mk2-squad__kings-pInfo {
+    writing-mode: sideways-lr;  
+  }
 }
 .mk2-squad__kings-pInfo h5 {
   text-transform: capitalize;
