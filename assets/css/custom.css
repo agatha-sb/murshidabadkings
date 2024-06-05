@@ -101,6 +101,14 @@ svg {
   left: 0;
   opacity: 0.72;
 }
+.mk2-bgImg {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
 .mk2-bgImg img {
   width: 100%;
   height: 100%;
@@ -637,11 +645,8 @@ section[class^="mk2-"] {
 /** ----------------------------
 *      Section: Bt20pro Start
 **  --------------------------*/
-.mk2-bT20pro__wrap {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
+.mk2-bT20pro {
+  overflow: hidden;
 }
 /** ----------------------------
 *      Section: Bt20pro End
